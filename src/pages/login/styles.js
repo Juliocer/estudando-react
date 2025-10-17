@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
-    margin: 0 auto;
-    margin-top: 120px;
+    margin: 3rem auto;
 
     display: flex;
     flex-direction: row;
@@ -14,11 +13,9 @@ export const Container = styled.main`
 export const Wrapper = styled.div`
     max-width: 300px;
 `
-
 export const Column = styled.div`
     flex: 1;
 `
-
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
@@ -26,6 +23,7 @@ export const Row = styled.div`
     align-items: center;
     margin-top: 20px;
 `
+
 
 export const Title = styled.h2`
     font-family: 'Open Sans';
@@ -72,6 +70,7 @@ export const CriarText = styled.p`
     font-size: 14px;
     line-height: 19px;
 
+    cursor: pointer;
     color: #e23dd7;
 `
 

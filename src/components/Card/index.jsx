@@ -1,47 +1,32 @@
-import styled from "styled-components";
+import React from 'react'
 
-export const CardContainer = styled.div`
-    width: 100%;
-    background-color: #3b4651;
-    position: relative;
-    margin-bottom: 24px;
-`
+import { CardContainer, Content, HasInfo, ImageBackground, PostInfo, UserInfo, UserPicture } from './styles';
 
-export const ImageBackground = styled.img`
-    width: 100%;
-    height: 180px;
-`
+const Card = () => {
+    return (
+        <CardContainer>
+            <ImageBackground />
+            <Content>
+                <UserInfo>
+                    <UserPicture src='https://avatars.githubusercontent.com/u/143886237?s=400&u=f9b548593f3d61796f405d3e608518a6bbbddcf2&v=4'/>
+                    <div>
+                        <h4>Júlio César</h4>
+                        <p>Há 8 minutos</p>
+                    </div>
+                </UserInfo>
+                <PostInfo>
+                    <h4>Projeto para curso de HTML E CSS</h4>
+                    <p>Projeto feito o curso de HTML e CSS no bootcamp dio Global avanade...<strong>Saiba Mais</strong></p>
+                </PostInfo>
+                <HasInfo>
+                    <h4>#HTML #CSS #JavaScript</h4>
+                    <p>
+                        16
+                    </p>
+                </HasInfo>
+            </Content>
+        </CardContainer>
+    )
+}
 
-export const Content = styled.div`
-    eidth: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-`
-
-export const UserInfo = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 12px;
-
-    div {
-        margin-left: 12px;
-    }
-
-    h4{
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
-        color: #fff;
-    }
-
-    p {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-    }
-`
+export { Card }
